@@ -41,16 +41,13 @@
     </style>
 </head>
 <body>
-   <a href="login.html"><button>cadastre-se</button></a>
-
-   <div class="container">
-    <h2>login</h2>
-    <br><input type="text"placeholder="email">
-    <br><input type="pessword" placeholder="senha">
-    <br><button>entrar</button>
-   <a href="">cadastre-se</a><br>
-   <a href="">Esqueci minha senha</a>
-</div>
-   
+    <div class="container">
+        <h2>cadastre-se</h2>
+        <br><input type="text"placeholder="nome">
+        <br><input type="text"placeholder="email"
+        ><br><input type="text"placeholder="senha"
+        ><br><input type="pessword" placeholder="confirmar senha">
+        <br><button>entrar</button>
+    
 </body>
 </html>
