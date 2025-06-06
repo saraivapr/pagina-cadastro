@@ -6,7 +6,7 @@
     <title>pagina de inicio</title>
     <style>
         *{
-            margin: o;
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
@@ -16,9 +16,10 @@
 
         }
         .menu{
-            list-style: nome;/*limpar os marcadores padrao da lista ul ou ol*/
+            list-style: none;/*limpar os marcadores padrao da lista ul ou ol*/
             display: flex;/*permite que elementos seja organizados de maneira flex*/
             justify-content: space-around;/*distribui os itens uniformemente deixe um espaço entre eles*/
+            align-items: center;
             background-color: aquamarine;/*coler de fundo*/
             padding: 10px 0;/*adicione 10 pixele de espacamento em cima e em baixo sem mudar as laterais*/
             position: fixed;/*fixa o elemento na parte superior da tela*/
@@ -26,13 +27,38 @@
             width: 100%;/*faz com que o elemento ocupe 100% da largura da tela*/
             z-index: 1000;/*garrante que os elementos fique acima das outros itens*/
         }
+        .menu li{
+            position: relative;
+        }
+
+        .menu li a{
+            color: rgb(175, 4, 4);
+            text-decoration: none;
+            padding: 10px 20px;
+
+        }
+
+        menu li a{
+        background-color: aqua;
+        color: aliceblue;
+        }
+    
     </style>
+
 </head>
 <body>
    <ul class="menu">
-    <li>inicio</li>
-    <li>sobre</li>
-    <li>perfil</li>
+    <li>
+        <li><a href="#"></a>inicio
+            <ul>
+                <li><a href="#"></a>compras</li>
+                <li><a href="#"></a>vendas</li>
+                <li><a href="#"></a>troca</li>
+            </ul>
+        </li>    
+    </li>
+    <li><a href="#"></a>sobre</li>
+    <li><a href="#"></a>perfil</li>
     <li><a href="login.html">contato</a></li>
    </ul> 
 </body>
